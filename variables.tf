@@ -43,11 +43,11 @@ variable "stream_mode" {
 
 }
 
-variable "filename" {
-    description = "value"
-   type = string 
+# variable "filename" {
+#     description = "value"
+#    type = string 
   
-}
+# }
 variable "function_name" {
     description = "value"
    type = string 
