@@ -1,8 +1,9 @@
 variable "region" {
   description = "value"
   type = string
+  default = "ap-south-1"
 }
-variable "name" {
+variable "iot_name" {
   description = "value"
   type        = string
 
@@ -10,6 +11,7 @@ variable "name" {
 variable "First" {
   description = "value"
   type        = string
+  default = "IOT-Thing"
 
 }
 
@@ -17,16 +19,7 @@ variable "bucket_name" {
   description = "value"
   type = string
 }
-# variable "name" {
-#   description = "value"
-#   type        = string
 
-# }
-# variable "First" {
-#   description = "value"
-#   type        = string
-
-# }
 variable "kinesis_name" {
   description = "value"
   type        = string
@@ -40,11 +33,13 @@ variable "shard_count" {
 variable "retention_period" {
   description = "value"
   type        = string
+  default = "48"
 
 }
 variable "stream_mode" {
   description = "value"
   type        = string
+  default = "PROVISIONED"
 
 }
 
@@ -66,6 +61,7 @@ variable "role" {
 variable "handler" {
     description = "value"
    type = string 
+   default = "index.js"
   
 }
 variable "runtime" {
